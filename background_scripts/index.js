@@ -76,7 +76,7 @@
     for (const url of Object.keys(locations)) {
       // On patiente un peu entre chaque centre de vaccination pour ne pas trop stresser les serveurs
       await new Promise((r) =>
-        setTimeout(r, 1000 + Math.floor(Math.random() * 5000))
+        setTimeout(r, 0 + Math.floor(Math.random() * 1))
       );
 
       if (stopped) return;
